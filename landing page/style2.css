@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #23282f 16.62%, #526e8e 85.61%);
+}
+
+/*Barra de navegação*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.imagem1 {
+    height: 140px;
+}
+
+.navbar-menu{
+    display: flex;
+    gap:32px
+}
+
+.navbar-item{
+    font-family: 'Sarala', sans-serif;
+    color: #ede7ff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.navbar-item:hover{
+    color: rgba(236, 214, 196, 0.884);
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+
+/* Estilo para index*/
+.conteudo {
+    border-top: 0.4px solid #ede7ff;
+    margin-bottom: 48px;
+}
+
+.section1{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.section1Text{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.section1h1{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #ede7ff;
+}
+
+.section1h2{
+    font-family: 'Sarala', sans-serif;
+    color:  #ede7ff;
+    font-weight: 400;
+    font-size: 20px ;
+}
+
+.botao {
+    background-color: #dddeebfd;
+    width: 200px;
+    height: 50px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 18px ;
+    color: #2F2325;
+}
+
+.botao:hover{
+    background-color: rgba(196, 207, 236, 0.507);
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 19px;
+}
+
+.imagem2 {
+    height: 300px;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.section2h3{
+    border-top: 0.4px solid #ede7ff;
+    padding-top: 40px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ede7ff;
+    margin-bottom: 16px;
+}
+
+.section2p{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px ;
+    color: #ede7ff;
+}
+
+
+/*Rodape*/
+.rodape{
+    border-top: 0.4px solid #ede7ff;
+}
+
+.imagem3{
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Contato*/
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    background-color: #3c4760;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 700px;
+    padding: 20px;
+    width: 600px;
+    margin-bottom: 40px;
+  }
+  
+  .titulo {
+    color: #eee;
+    font-family:  'Righteous', cursive;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitulo {
+    color: #eee;
+    font-family: 'Sarala', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+   
+  .cut {
+    background-color: #3c4760;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position:absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 80px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color:#eee;
+  }
+  
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+  
